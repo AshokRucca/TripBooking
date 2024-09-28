@@ -32,26 +32,68 @@ nav a:hover{
     background:lightseagreen;
     color:whitesmoke;
 }
-.button{
-    background-color:grey;
-    border:none;
+
+
+.submit {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:lightseagreen;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid lightseagreen;
     border-radius: 10px;
-    padding:10px 25px;
-    margin:10px;
-    color:whitesmoke;
-    font-weight: bold;
-}
+    box-shadow: inset 0 0 0 0 lightseagreen;
+  }
+  
+  .submit:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 lightseagreen;
+  }
+  
+  .submit:active {
+    transform: scale(0.9);
+
+  }
+  .submit::after{
+     position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:lightseagreen;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 lightseagreen;
+
+  }
+
 
 section h1{
     color:lightseagreen;
     font-size:80px;
-    margin-top:100px;
+    margin-top:50px;
 }
 
 section h2 {
     color:lightseagreen;
     font-size:50px;
+    margin-right:100px;
 }
+
 
 p{
     font-family: calibri,sans-serif;
@@ -72,6 +114,52 @@ div img{
 .home-section{
     padding:100px;
 }
+
+.our-packages figure button{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:lightseagreen;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 lightseagreen;
+}
+.our-packages figure button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 lightseagreen;
+  }
+  
+  .our-packages figure button:active {
+    transform: scale(0.9);
+
+  }
+  .our-packages figure button::after{
+     position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:lightseagreen;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 lightseagreen;
+
+  }
 
 section figure{
     box-shadow:0 0 10px black;
