@@ -29,10 +29,12 @@ nav a{
     font-size: 20px;
     color:black;
     transition:.3s;
+    justify-content: space-between;
 }
 nav a:hover{
-    color:orangered;
+    color:whitesmoke;
     font-size:18px;
+    background-color: lightseagreen;
 }
 
 
