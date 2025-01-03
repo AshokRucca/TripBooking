@@ -1,191 +1,149 @@
-*{ 
-    margin:0px;
-    padding:0px;
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: aliceblue;
+
+body {
+    background-color: #f4f7f6;
     text-align: center;
-}
-header{
-    background:linear-gradient(45deg,teal,lightseagreen);
-    padding:25px;
-}
-header h1{
-    color:whitesmoke;
-    font-family:calibri,sans-serif;
-    font-size:80px;
-}
-nav{
-    background-color: aquamarine;
-    box-shadow:0 0 10px;
-   
-
-}
-nav a{
-    text-decoration:none;
-    display:inline-block;
-    padding:5px 25px;
-    font-family:poppins,sans-serif;
-    font-size: 20px;
-    color:black;
-    transition:.3s;
-    justify-content: space-between;
-}
-nav a:hover{
-    color:whitesmoke;
-    font-size:18px;
-    background-color: lightseagreen;
+    font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav {
+    background-color: #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
 
 .submit {
     position: relative;
     display: inline-block;
-    margin: 15px;
+    margin: 20px;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #3498db;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #3498db;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.submit:active {
+    transform: scale(0.95);
+}
+
+section h1 {
+    color: #2c3e50;
+    font-size: 3rem;
     margin-top: 50px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color:lightseagreen;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid lightseagreen;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 lightseagreen;
-  }
-  
-  .submit:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 lightseagreen;
-  }
-  
-  .submit:active {
-    transform: scale(0.9);
+    font-family: 'Montserrat', sans-serif;
+}
 
-  }
-  .submit::after{
-     position: relative;
+section figure {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 300px;
     display: inline-block;
-    margin: 15px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color:lightseagreen;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid lightseagreen;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 lightseagreen;
-
-  }
-
-
-section h1{
-    color:lightseagreen;
-    font-size:80px;
-    margin-top:50px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
 }
 
-section h2 {
-    color:lightseagreen;
-    font-size:50px;
-    margin-right:100px;
+section figure:hover {
+    transform: translateY(-10px);
 }
 
-
-p{
-    font-family: calibri,sans-serif;
-    padding:5px;
-    color:gray;
-}
-
-div{
-    text-align: center;
-    margin-top:20px;
-}
-div img{
-    width:300px;
-    padding:10px 25px;
-    border:5px solid black;
-
-}
-.home-section{
-    padding:100px;
-}
-
-.our-packages figure button{
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    margin-top: 30px;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color:lightseagreen;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid lightseagreen;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 lightseagreen;
-}
-.our-packages figure button:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 lightseagreen;
-  }
-  
-  .our-packages figure button:active {
-    transform: scale(0.9);
-
-  }
-  .our-packages figure button::after{
-     position: relative;
-    display: inline-block;
-    margin: 15px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color:lightseagreen;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid lightseagreen;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 lightseagreen;
-
-  }
-
-section figure{
-    box-shadow:0 0 10px black;
-    width:300px;
-    display:inline-block;
-    padding:10px 10px;
-    background-color: floralwhite;
-    margin-top:50px;
-    margin:20px;
-}
-section figure img{
+section figure img {
     width: 100%;
-    margin:auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
-section figure figcaption{
-    font-size:25px;
+
+section figure img:hover {
+    transform: scale(1.05);
 }
-section figure p{
-    font-size:18px;
+
+section figure figcaption {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 15px;
 }
-footer{
-    background-color:gray;
-    padding:10px;
-    margin-top:20px;
+
+section figure p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+.our-packages figure button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.our-packages figure button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    section figure {
+        width: 90%;
+        margin: 20px auto;
+    }
 }
